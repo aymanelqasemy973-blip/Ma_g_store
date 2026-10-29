@@ -1,236 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ma G Store | Boutique officielle</title>
-<style>
-:root {
-  --gold: #d4af37;
-  --black: #090909;
-  --card: #171717;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--black);
-  color: white;
-  font-family: Arial, sans-serif;
-}
-header {
-  padding: 22px 6%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #333;
-}
-.logo {
-  color: var(--gold);
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 18px;
-}
-.hero {
-  text-align: center;
-  padding: 75px 20px;
-  background: radial-gradient(ellipse, #29200b, #090909 70%);
-}
-.hero h1 {
-  font-size: clamp(35px, 6vw, 65px);
-  margin: 0 0 18px;
-}
-.hero span { color: var(--gold); }
-.hero p { color: #ccc; line-height: 1.8; }
-.btn {
-  display: inline-block;
-  background: var(--gold);
-  color: #111;
-  padding: 13px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 12px;
-}
-section { padding: 45px 6%; }
-h2 {
-  text-align: center;
-  color: var(--gold);
-  margin-bottom: 30px;
-}
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-.card {
-  background: var(--card);
-  border: 1px solid #333;
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 24px;
-  transition: .25s;
-}
-.card:hover {
-  transform: translateY(-5px);
-  border-color: var(--gold);
-}
-.card img {
-  width: 100%;
-  height: 235px;
-  object-fit: contain;
-  background: #fff;
-  padding: 12px;
-}
-.card h3 { margin: 20px 8px 10px; }
-.price {
-  color: var(--gold);
-  font-size: 23px;
-  font-weight: bold;
-  margin: 12px;
-}
-.card p { color: #bbb; }
-.order {
-  display: inline-block;
-  padding: 11px 20px;
-  border-radius: 5px;
-  background: var(--gold);
-  color: #111;
-  text-decoration: none;
-  font-weight: bold;
-}
-.delivery {
-  text-align: center;
-  padding: 35px 15px;
-  background: #171717;
-  line-height: 1.8;
-}
-footer {
-  text-align: center;
-  padding: 25px;
-  color: #aaa;
-  border-top: 1px solid #333;
-}
-@media(max-width:600px) {
-  header { flex-wrap: wrap; gap: 15px; }
-  nav a { margin-left: 8px; font-size: 14px; }
-  .hero { padding: 55px 15px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA G STORE | Montres de Luxe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #d4af37; /* Gold color */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logo ma g store.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        /* Products Grid */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .btn-order {
+            background-color: #25d366; /* WhatsApp Green */
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: #1eb954;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">MA G STORE</div>
-  <nav>
-    <a href="#watches">Montres</a>
-    <a href="#airpods">AirPods</a>
-  </nav>
-</header>
+    <header>
+        <div class="logo">MA G STORE</div>
+        <nav>
+            <a href="#collection">Collection</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<div class="hero">
-  <h1>Luxury <span>Style</span></h1>
-  <p>Découvrez notre collection de montres et d'écouteurs.<br>
-  Style, élégance et prix accessibles.</p>
-  <a class="btn" href="#watches">Découvrir la collection</a>
-</div>
+    <section class="hero">
+        <h1>Collection Élégance & Luxe</h1>
+        <p>Découvrez nos meilleures montres sélectionnées pour vous</p>
+    </section>
 
-<section id="watches">
-  <h2>⌚ Montres de Luxe</h2>
-  <div class="products">
+    <div class="container" id="collection">
+        <h2 class="section-title">Nos Produits</h2>
+        <div class="grid">
 
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
-      alt="Montre élégante">
-      <h3>Montre Luxury</h3>
-      <p>Élégance au quotidien</p>
-      <div class="price">239 DH</div>
-      <a class="order" href="#contact" onclick="order('Montre Luxury',239)">Commander</a>
-    </article>
+            <!-- Rolex Batman -->
+            <div class="card">
+                <img src="batman.jpeg" alt="Rolex GMT Batman">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex GMT-Master II "Batman"</h3>
+                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue avec bracelet Jubilé.</p>
+                    <div class="card-footer">
+                        <span class="price">Sur commande</span>
+                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Batman" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
 
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=80"
-      alt="Montre classique">
-      <h3>Montre Classique</h3>
-      <p>Un style intemporel</p>
-      <div class="price">239 DH</div>
-      <a class="order" href="#contact" onclick="order('Montre Classique',239)">Commander</a>
-    </article>
+            <!-- Rolex Pepsi / Submariner -->
+            <div class="card">
+                <img src="citizen - Copie.jpeg" alt="Rolex Pepsi">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex GMT-Master II "Pepsi"</h3>
+                    <p class="card-desc">Design iconique avec lunette bleue et rouge et finition haute qualité.</p>
+                    <div class="card-footer">
+                        <span class="price">Sur commande</span>
+                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Pepsi" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
 
-  </div>
-</section>
+            <!-- Cartier Santos -->
+            <div class="card">
+                <img src="cartier z - Copie.jpeg" alt="Cartier Santos Black">
+                <div class="card-body">
+                    <h3 class="card-title">Cartier Santos Noir</h3>
+                    <p class="card-desc">Boîtier carré élégant, cadran noir avec chiffres romains et bracelet en cuir.</p>
+                    <div class="card-footer">
+                        <span class="price">Sur commande</span>
+                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Santos%20Noire" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
 
-<section id="airpods">
-  <h2>🎧 Collection AirPods</h2>
-  <div class="products">
+            <!-- Citizen Chronomaster -->
+            <div class="card">
+                <img src="citizen.jpeg" alt="Citizen Chronomaster">
+                <div class="card-body">
+                    <h3 class="card-title">Citizen Chronomaster</h3>
+                    <p class="card-desc">Cadran bleu texturé somptueux avec boîtier en acier brossé.</p>
+                    <div class="card-footer">
+                        <span class="price">Sur commande</span>
+                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Citizen" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
 
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80"
-      alt="Écouteurs sans fil">
-      <h3>AirPods Pro 2</h3>
-      <p>Écouteurs sans fil</p>
-      <div class="price">129 DH</div>
-      <a class="order" href="#contact" onclick="order('AirPods Pro 2',129)">Commander</a>
-    </article>
+        </div>
+    </div>
 
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=700&q=80"
-      alt="Écouteurs sans fil">
-      <h3>AirPods Pro 3</h3>
-      <p>Design moderne</p>
-      <div class="price">129 DH</div>
-      <a class="order" href="#contact" onclick="order('AirPods Pro 3',129)">Commander</a>
-    </article>
-
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80"
-      alt="Écouteurs sans fil">
-      <h3>AirPods Pro 4</h3>
-      <p>Style et confort</p>
-      <div class="price">129 DH</div>
-      <a class="order" href="#contact" onclick="order('AirPods Pro 4',129)">Commander</a>
-    </article>
-
-  </div>
-</section>
-
-<div class="delivery" id="contact">
-  <h2>Livraison partout au Maroc 🇲🇦</h2>
-  <p>Choisissez votre produit et contactez-nous pour commander.</p>
-  <a class="btn" href="#" onclick="contactStore();return false;">Contacter Ma G Store</a>
-</div>
-
-<footer>
-  <p>© 2026 MA G STORE — Tous droits réservés.</p>
-</footer>
-
-<script>
-// Remplace ce numéro par ton numéro WhatsApp
-// Format : indicatif du pays + numéro, sans + ni espaces.
-const WHATSAPP = "212600000000";
-
-function order(product, price) {
-  const message = `Bonjour Ma G Store, je souhaite commander : ${product} à ${price} DH.`;
-  window.open(
-    `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`,
-    "_blank"
-  );
-}
-
-function contactStore() {
-  const message = "Bonjour Ma G Store, je souhaite avoir des informations sur vos produits.";
-  window.open(
-    `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`,
-    "_blank"
-  );
-}
-</script>
+    <footer id="contact">
+        <p>&copy; 2026 MA G STORE. Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
