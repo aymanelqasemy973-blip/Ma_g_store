@@ -13,11 +13,10 @@
         }
 
         body {
-            background-color: #0d0d0d;
-            color: #ffffff;
+            background-color: #f8f9fa;
+            color: #333;
         }
 
-        /* Header / Navbar */
         header {
             background-color: #111;
             color: #fff;
@@ -25,8 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
-            border-bottom: 1px solid #d4af37;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         header .logo {
@@ -48,21 +46,18 @@
             color: #d4af37;
         }
 
-        /* Hero Banner */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('logo ma g store.jpeg');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logo ma g store.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
             padding: 5rem 1rem;
-            border-bottom: 2px solid #d4af37;
         }
 
         .hero h1 {
             font-size: 2.8rem;
             margin-bottom: 1rem;
-            color: #d4af37;
         }
 
         .hero p {
@@ -72,16 +67,15 @@
 
         .free-delivery-badge {
             display: inline-block;
-            background: linear-gradient(135deg, #d4af37, #aa820a);
-            color: #000;
-            padding: 0.5rem 1.2rem;
+            background-color: #25d366;
+            color: white;
+            padding: 0.5rem 1rem;
             border-radius: 20px;
             font-weight: bold;
             margin-top: 1rem;
             font-size: 1rem;
         }
 
-        /* Products Grid */
         .container {
             max-width: 1200px;
             margin: 3rem auto;
@@ -94,7 +88,6 @@
             margin-bottom: 2.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #d4af37;
         }
 
         .grid {
@@ -104,11 +97,10 @@
         }
 
         .card {
-            background: #1a1a1a;
-            border: 1px solid #d4af37;
+            background: #fff;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
             flex-direction: column;
@@ -116,14 +108,13 @@
 
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
         .card img {
             width: 100%;
-            height: 280px;
+            height: 320px;
             object-fit: cover;
-            border-bottom: 1px solid #333;
         }
 
         .card-body {
@@ -137,12 +128,12 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #d4af37;
+            color: #111;
         }
 
         .card-desc {
             font-size: 0.95rem;
-            color: #ccc;
+            color: #666;
             margin-bottom: 0.5rem;
             flex-grow: 1;
         }
@@ -164,7 +155,7 @@
         .price {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #ffffff;
+            color: #d4af37;
         }
 
         .btn-order {
@@ -183,14 +174,12 @@
             background-color: #1eb954;
         }
 
-        /* Footer */
         footer {
             background: #111;
             color: #aaa;
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
-            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -214,138 +203,80 @@
         <h2 class="section-title">Nos Produits</h2>
         <div class="grid">
 
-            <!-- 1. Roles Gold 1 -->
+            <!-- 1. Patek Philippe -->
             <div class="card">
-                <img src="roles gold 1.jpg" alt="Roles Gold 1">
+                <img src="batekh philipe 1.jpeg" alt="Patek Philippe">
                 <div class="card-body">
-                    <h3 class="card-title">Roles Gold 1</h3>
-                    <p class="card-desc">Modèle luxueux en plaqué or avec finitions impeccables.</p>
+                    <h3 class="card-title">Patek Philippe Nautilus</h3>
+                    <p class="card-desc">Design sportif et luxueux en acier brossé avec cadran texturé.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Roles%20Gold%201%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Patek%20Philippe%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Batek Philipe 1 -->
+            <!-- 2. Rolex Batman -->
             <div class="card">
-                <img src="batek philipe 1.jpg" alt="Batek Philipe 1">
+                <img src="batman 1.jpeg" alt="Rolex Batman">
                 <div class="card-body">
-                    <h3 class="card-title">Batek Philipe</h3>
-                    <p class="card-desc">Design iconique et élégance intemporelle.</p>
+                    <h3 class="card-title">Rolex GMT-Master II "Batman"</h3>
+                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue avec bracelet Jubilé.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Batek%20Philipe%201%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Batman%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Batman 1 -->
+            <!-- 3. Cartier Bleu -->
             <div class="card">
-                <img src="batman 1.jpg" alt="Batman 1">
+                <img src="cartie bleu.jpeg" alt="Cartier Bleu">
                 <div class="card-body">
-                    <h3 class="card-title">Rolex Batman</h3>
-                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue.</p>
+                    <h3 class="card-title">Cartier Santos Bleu</h3>
+                    <p class="card-desc">Boîtier carré élégant, cadran bleu et bracelet raffiné.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Batman%201%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Bleu%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. Cartie Bleu -->
+            <!-- 4. Cartier Noire -->
             <div class="card">
-                <img src="cartie bleu.jpg" alt="Cartie Bleu">
+                <img src="cartier noire.jpeg" alt="Cartier Noire">
                 <div class="card-body">
-                    <h3 class="card-title">Cartier Bleu</h3>
-                    <p class="card-desc">Boîtier élégant avec bracelet en cuir bleu raffiné.</p>
+                    <h3 class="card-title">Cartier Santos Noir</h3>
+                    <p class="card-desc">Boîtier carré élégant, cadran noir avec chiffres romains.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Cartie%20Bleu%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. Rolex Rose -->
+            <!-- 5. Guess -->
             <div class="card">
-                <img src="rolex rose.jpg" alt="Rolex Rose">
+                <img src="guesse s.jpeg" alt="Guess Watch">
                 <div class="card-body">
-                    <h3 class="card-title">Rolex Rose</h3>
-                    <p class="card-desc">Cadran rose unique avec finitions de haute qualité.</p>
+                    <h3 class="card-title">Montre Guess Casual</h3>
+                    <p class="card-desc">Élégante et moderne avec coffret d'origine et certificat.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Rose%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Montre%20Guess%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 6. Cartier Noire -->
+            <!-- 6. Matchy Rolex -->
             <div class="card">
-                <img src="cartier noire.jpg" alt="Cartier Noire">
+                <img src="matchy rolex.jpeg" alt="Matchy Rolex">
                 <div class="card-body">
-                    <h3 class="card-title">Cartier Noire</h3>
-                    <p class="card-desc">Style sombre et luxueux avec bracelet en cuir noir.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Cartier%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7. Rolex Cuire -->
-            <div class="card">
-                <img src="rolex cuire.jpg" alt="Rolex Cuire">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex Cuir Bleu</h3>
-                    <p class="card-desc">Design classique et confortable pour tous les jours.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Cuire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8. Rolex Cuire Coffe -->
-            <div class="card">
-                <img src="rolex cuire coffe.jpg" alt="Rolex Cuire Coffe">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex Cuir Marron</h3>
-                    <p class="card-desc">Élégance classique avec un bracelet en cuir marron.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Cuire%20Coffe%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 9. Rolex Cuire Noire -->
-            <div class="card">
-                <img src="rolex cuire noire.jpg" alt="Rolex Cuire Noire">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex Cuir Noir</h3>
-                    <p class="card-desc">Chic et discret, parfait pour les grandes occasions.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Cuire%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer id="contact">
-        <p>&copy; 2026 MA G STORE. Tous droits réservés.</p>
-    </footer>
-
-</body>
-</html>
+                    <h3 class="card-title">Duo Set Rolex</h3>
+                    <p class="card-desc">Ensemble de deux montres assorties pour couples.</p>
+                    <div class="free-shipping-tag
