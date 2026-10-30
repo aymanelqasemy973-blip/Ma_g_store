@@ -13,8 +13,8 @@
         }
 
         body {
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #0d0d0d;
+            color: #ffffff;
         }
 
         /* Header / Navbar */
@@ -25,258 +25,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        header .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: #d4af37; /* Gold color */
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #d4af37;
-        }
-
-        /* Hero Banner */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logo ma g store.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 5rem 1rem;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #ddd;
-        }
-
-        /* Products Grid */
-        .container {
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .card img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .card-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #111;
-        }
-
-        .card-desc {
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: 1rem;
-            flex-grow: 1;
-        }
-
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        .price {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #111;
-        }
-
-        .btn-order {
-            background-color: #25d366; /* WhatsApp Green */
-            color: white;
-            padding: 0.6rem 1.2rem;
-            border: none;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background 0.3s;
-        }
-
-        .btn-order:hover {
-            background-color: #1eb954;
-        }
-
-        /* Footer */
-        footer {
-            background: #111;
-            color: #aaa;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="logo">MA G STORE</div>
-        <nav>
-            <a href="#collection">Collection</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>Collection Élégance & Luxe</h1>
-        <p>Découvrez nos meilleures montres sélectionnées pour vous</p>
-    </section>
-
-    <div class="container" id="collection">
-        <h2 class="section-title">Nos Produits</h2>
-        <div class="grid">
-
-            <!-- Rolex Batman -->
-            <div class="card">
-                <img src="batman.jpeg" alt="Rolex GMT Batman">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex GMT-Master II "Batman"</h3>
-                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue avec bracelet Jubilé.</p>
-                    <div class="card-footer">
-                        <span class="price">Sur commande</span>
-                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Batman" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Rolex Pepsi / Submariner -->
-            <div class="card">
-                <img src="citizen - Copie.jpeg" alt="Rolex Pepsi">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex GMT-Master II "Pepsi"</h3>
-                    <p class="card-desc">Design iconique avec lunette bleue et rouge et finition haute qualité.</p>
-                    <div class="card-footer">
-                        <span class="price">Sur commande</span>
-                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Pepsi" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cartier Santos -->
-            <div class="card">
-                <img src="cartier z - Copie.jpeg" alt="Cartier Santos Black">
-                <div class="card-body">
-                    <h3 class="card-title">Cartier Santos Noir</h3>
-                    <p class="card-desc">Boîtier carré élégant, cadran noir avec chiffres romains et bracelet en cuir.</p>
-                    <div class="card-footer">
-                        <span class="price">Sur commande</span>
-                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Santos%20Noire" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Citizen Chronomaster -->
-            <div class="card">
-                <img src="citizen.jpeg" alt="Citizen Chronomaster">
-                <div class="card-body">
-                    <h3 class="card-title">Citizen Chronomaster</h3>
-                    <p class="card-desc">Cadran bleu texturé somptueux avec boîtier en acier brossé.</p>
-                    <div class="card-footer">
-                        <span class="price">Sur commande</span>
-                        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Citizen" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer id="contact">
-        <p>&copy; 2026 MA G STORE. Tous droits réservés.</p>
-    </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MA G STORE | Montres de Luxe</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        /* Header / Navbar */
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid #d4af37;
         }
 
         header .logo {
@@ -300,17 +50,19 @@
 
         /* Hero Banner */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logo ma g store.jpeg');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('logo ma g store.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
             padding: 5rem 1rem;
+            border-bottom: 2px solid #d4af37;
         }
 
         .hero h1 {
             font-size: 2.8rem;
             margin-bottom: 1rem;
+            color: #d4af37;
         }
 
         .hero p {
@@ -320,9 +72,9 @@
 
         .free-delivery-badge {
             display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #d4af37, #aa820a);
+            color: #000;
+            padding: 0.5rem 1.2rem;
             border-radius: 20px;
             font-weight: bold;
             margin-top: 1rem;
@@ -342,6 +94,7 @@
             margin-bottom: 2.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            color: #d4af37;
         }
 
         .grid {
@@ -351,10 +104,11 @@
         }
 
         .card {
-            background: #fff;
+            background: #1a1a1a;
+            border: 1px solid #d4af37;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
             flex-direction: column;
@@ -362,13 +116,14 @@
 
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
         }
 
         .card img {
             width: 100%;
-            height: 320px;
+            height: 280px;
             object-fit: cover;
+            border-bottom: 1px solid #333;
         }
 
         .card-body {
@@ -382,12 +137,12 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #111;
+            color: #d4af37;
         }
 
         .card-desc {
             font-size: 0.95rem;
-            color: #666;
+            color: #ccc;
             margin-bottom: 0.5rem;
             flex-grow: 1;
         }
@@ -409,7 +164,7 @@
         .price {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #d4af37;
+            color: #ffffff;
         }
 
         .btn-order {
@@ -435,276 +190,7 @@
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="logo">MA G STORE</div>
-        <nav>
-            <a href="#collection">Collection</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>Collection Élégance & Luxe</h1>
-        <p>Découvrez nos meilleures montres sélectionnées pour vous</p>
-        <div class="free-delivery-badge">🚚 Livraison Gratuite Partpartout au Maroc</div>
-    </section>
-
-    <div class="container" id="collection">
-        <h2 class="section-title">Nos Produits</h2>
-        <div class="grid">
-
-            <!-- Rolex Batman -->
-            <div class="card">
-                <img src="batman.jpeg" alt="Rolex GMT Batman">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex GMT-Master II "Batman"</h3>
-                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue avec bracelet Jubilé.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Batman%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Rolex Pepsi -->
-            <div class="card">
-                <img src="citizen - Copie.jpeg" alt="Rolex Pepsi">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex GMT-Master II "Pepsi"</h3>
-                    <p class="card-desc">Design iconique avec lunette bleue et rouge et finition haute qualité.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Pepsi%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cartier Santos -->
-            <div class="card">
-                <img src="cartier z - Copie.jpeg" alt="Cartier Santos Black">
-                <div class="card-body">
-                    <h3 class="card-title">Cartier Santos Noir</h3>
-                    <p class="card-desc">Boîtier carré élégant, cadran noir avec chiffres romains et bracelet en cuir.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Santos%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Citizen Chronomaster -->
-            <div class="card">
-                <img src="citizen.jpeg" alt="Citizen Chronomaster">
-                <div class="card-body">
-                    <h3 class="card-title">Citizen Chronomaster</h3>
-                    <p class="card-desc">Cadran bleu texturé somptueux avec boîtier en acier brossé.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Citizen%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer id="contact">
-        <p>&copy; 2026 MA G STORE. Tous droits réservés.</p>
-    </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MA G STORE | Montres de Luxe</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        header .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: #d4af37;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #d4af37;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logo ma g store.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 5rem 1rem;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #ddd;
-        }
-
-        .free-delivery-badge {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 1rem;
-            font-size: 1rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .card img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .card-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #111;
-        }
-
-        .card-desc {
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: 0.5rem;
-            flex-grow: 1;
-        }
-
-        .free-shipping-tag {
-            font-size: 0.85rem;
-            color: #25d366;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-        }
-
-        .price {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #d4af37;
-        }
-
-        .btn-order {
-            background-color: #25d366;
-            color: white;
-            padding: 0.6rem 1.2rem;
-            border: none;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background 0.3s;
-        }
-
-        .btn-order:hover {
-            background-color: #1eb954;
-        }
-
-        footer {
-            background: #111;
-            color: #aaa;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
+            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -728,142 +214,128 @@
         <h2 class="section-title">Nos Produits</h2>
         <div class="grid">
 
-            <!-- 1. Cartier -->
+            <!-- 1. Roles Gold 1 -->
             <div class="card">
-                <img src="cartier z - Copie.jpeg" alt="Cartier Santos">
+                <img src="roles gold 1.jpg" alt="Roles Gold 1">
                 <div class="card-body">
-                    <h3 class="card-title">Cartier Santos Noir</h3>
-                    <p class="card-desc">Boîtier carré élégant, cadran noir avec chiffres romains.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Santos%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2. Chronomaster -->
-            <div class="card">
-                <img src="chronomaster.jpeg" alt="Chronomaster">
-                <div class="card-body">
-                    <h3 class="card-title">Citizen Chronomaster</h3>
-                    <p class="card-desc">Cadran bleu texturé somptueux avec boîtier en acier brossé.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Chronomaster%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. Citizen -->
-            <div class="card">
-                <img src="citizen.jpeg" alt="Citizen">
-                <div class="card-body">
-                    <h3 class="card-title">Citizen Classic</h3>
-                    <p class="card-desc">Design raffiné et élégant pour toutes vos occasions.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Citizen%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Rolex Batman -->
-            <div class="card">
-                <img src="rolex batman.jpeg" alt="Rolex Batman">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex GMT-Master II "Batman"</h3>
-                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue avec bracelet Jubilé.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Batman%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5. Rolex D -->
-            <div class="card">
-                <img src="rolex d.jpeg" alt="Rolex Gold Green">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex Day-Date "Gold & Green"</h3>
-                    <p class="card-desc">Finition dorée prestigieuse avec un magnifique cadran vert.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Gold%20Green%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 6. Rolex Pepsi -->
-            <div class="card">
-                <img src="rolex pepsi.jpeg" alt="Rolex Pepsi">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex GMT-Master II "Pepsi"</h3>
-                    <p class="card-desc">Design iconique avec lunette bleue et rouge et finition haute qualité.</p>
-                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
-                    <div class="card-footer">
-                        <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Pepsi%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7. Rolex Golde -->
-            <div class="card">
-                <img src="rolex golde.jpeg" alt="Rolex Golde">
-                <div class="card-body">
-                    <h3 class="card-title">Rolex Classic Gold</h3>
+                    <h3 class="card-title">Roles Gold 1</h3>
                     <p class="card-desc">Modèle luxueux en plaqué or avec finitions impeccables.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Golde%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Roles%20Gold%201%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 8. Guesse S -->
+            <!-- 2. Batek Philipe 1 -->
             <div class="card">
-                <img src="guesse s.jpeg" alt="Guess Watch">
+                <img src="batek philipe 1.jpg" alt="Batek Philipe 1">
                 <div class="card-body">
-                    <h3 class="card-title">Montre Guess Casual</h3>
-                    <p class="card-desc">Élégante et moderne avec coffret d'origine et certificat.</p>
+                    <h3 class="card-title">Batek Philipe</h3>
+                    <p class="card-desc">Design iconique et élégance intemporelle.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Montre%20Guess%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Batek%20Philipe%201%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 9. Matchy Rolex -->
+            <!-- 3. Batman 1 -->
             <div class="card">
-                <img src="matchy rolex.jpeg" alt="Matchy Rolex Duo">
+                <img src="batman 1.jpg" alt="Batman 1">
                 <div class="card-body">
-                    <h3 class="card-title">Duo Set Rolex</h3>
-                    <p class="card-desc">Ensemble de deux montres assorties pour couples, design classique.</p>
+                    <h3 class="card-title">Rolex Batman</h3>
+                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20Duo%20Rolex%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Batman%201%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
 
-            <!-- 10. Matchy Goold Rolex -->
+            <!-- 4. Cartie Bleu -->
             <div class="card">
-                <img src="matchy goold rolex.jpeg" alt="Matchy Gold Rolex Duo">
+                <img src="cartie bleu.jpg" alt="Cartie Bleu">
                 <div class="card-body">
-                    <h3 class="card-title">Duo Set Rolex Gold</h3>
-                    <p class="card-desc">Ensemble exclusif de deux montres dorées pour un style unique.</p>
+                    <h3 class="card-title">Cartier Bleu</h3>
+                    <p class="card-desc">Boîtier élégant avec bracelet en cuir bleu raffiné.</p>
                     <div class="free-shipping-tag">✓ Livraison Gratuite</div>
                     <div class="card-footer">
                         <span class="price">219 DH</span>
-                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20Duo%20Gold%20Rolex%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Cartie%20Bleu%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Rolex Rose -->
+            <div class="card">
+                <img src="rolex rose.jpg" alt="Rolex Rose">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Rose</h3>
+                    <p class="card-desc">Cadran rose unique avec finitions de haute qualité.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Rose%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Cartier Noire -->
+            <div class="card">
+                <img src="cartier noire.jpg" alt="Cartier Noire">
+                <div class="card-body">
+                    <h3 class="card-title">Cartier Noire</h3>
+                    <p class="card-desc">Style sombre et luxueux avec bracelet en cuir noir.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Cartier%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Rolex Cuire -->
+            <div class="card">
+                <img src="rolex cuire.jpg" alt="Rolex Cuire">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Cuir Bleu</h3>
+                    <p class="card-desc">Design classique et confortable pour tous les jours.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Cuire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Rolex Cuire Coffe -->
+            <div class="card">
+                <img src="rolex cuire coffe.jpg" alt="Rolex Cuire Coffe">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Cuir Marron</h3>
+                    <p class="card-desc">Élégance classique avec un bracelet en cuir marron.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Cuire%20Coffe%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Rolex Cuire Noire -->
+            <div class="card">
+                <img src="rolex cuire noire.jpg" alt="Rolex Cuire Noire">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Cuir Noir</h3>
+                    <p class="card-desc">Chic et discret, parfait pour les grandes occasions.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20Rolex%20Cuire%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
@@ -874,218 +346,6 @@
     <footer id="contact">
         <p>&copy; 2026 MA G STORE. Tous droits réservés.</p>
     </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magasin Luxury</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #0d0d0d;
-            color: #ffffff;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Grid d Products */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .product-card {
-            background-color: #1a1a1a;
-            border: 1px solid #d4af37;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .product-image {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            border: 1px solid #333;
-        }
-
-        .product-title {
-            color: #d4af37;
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-
-        .product-desc {
-            font-size: 0.85rem;
-            color: #ccc;
-            margin-bottom: 10px;
-        }
-
-        .product-price {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-
-        .btn-commander {
-            background: linear-gradient(135deg, #d4af37, #aa820a);
-            color: #000;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-            text-transform: uppercase;
-        }
-
-        .btn-commander:hover {
-            background: linear-gradient(135deg, #f3e5ab, #d4af37);
-        }
-
-        /* Form d Takhsiss Khass */
-        .order-form-container {
-            background-color: #141414;
-            border: 2px solid #d4af37;
-            border-radius: 10px;
-            padding: 25px;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-        }
-
-        .order-form-container h2 {
-            color: #d4af37;
-            margin-bottom: 20px;
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            color: #d4af37;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-        }
-
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            background-color: #000000;
-            border: 1px solid #d4af37;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 1rem;
-        }
-
-        .form-group input:focus, 
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #fff;
-        }
-
-        .btn-submit {
-            width: 100%;
-            background: linear-gradient(135deg, #d4af37, #aa820a);
-            color: #000;
-            border: none;
-            padding: 12px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            text-transform: uppercase;
-            margin-top: 10px;
-        }
-
-        .btn-submit:hover {
-            background: linear-gradient(135deg, #f3e5ab, #d4af37);
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        
-        <!-- Section d Products -->
-        <div class="products-grid">
-            
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x220" alt="Rolex GMT" class="product-image">
-                <h3 class="product-title">Rolex GMT-Master II "Batman"</h3>
-                <p class="product-desc">Cadran noir, lunette céramique noire et bleue.</p>
-                <div class="product-price">219 DH</div>
-                <button class="btn-commander">Commander</button>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x220" alt="Rolex Day-Date" class="product-image">
-                <h3 class="product-title">Rolex Day-Date "Gold & Green"</h3>
-                <p class="product-desc">Finition dorée prestigieuse avec un magnifique cadran vert.</p>
-                <div class="product-price">219 DH</div>
-                <button class="btn-commander">Commander</button>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/300x220" alt="Rolex Pepsi" class="product-image">
-                <h3 class="product-title">Rolex GMT-Master II "Pepsi"</h3>
-                <p class="product-desc">Design iconique avec lunette bleue et rouge.</p>
-                <div class="product-price">219 DH</div>
-                <button class="btn-commander">Commander</button>
-            </div>
-
-        </div>
-
-        <!-- Section Formulaire -->
-        <div class="order-form-container">
-            <h2>T'ALAB TAKHSISS KHASS</h2>
-            <form>
-                <div class="form-group">
-                    <input type="text" placeholder="Smeyya o lKunya / اسمية و الكنية" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Numero d'Telephone / نمرة د التليفون" required>
-                </div>
-                <div class="form-group">
-                    <textarea rows="4" placeholder="Wassf d'Takhsiss li bghiti / وصف التخصيص"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">COMMANDER</button>
-            </form>
-        </div>
-
-    </div>
 
 </body>
 </html>
