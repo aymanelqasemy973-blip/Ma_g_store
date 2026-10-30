@@ -402,6 +402,423 @@
                     <div class="card-footer">
                         <span class="price">219 DH</span>
                         <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Rose%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA G STORE | Catalogue de Luxe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            position: relative;
+        }
+
+        /* اللوجو في خلفية الموقع كاملاً بشكل شفاف وأنيق */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('logo ma g store.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 400px;
+            opacity: 0.08; /* درجة الشفافية باش يجي خفيف وشفاف */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #d4af37;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+
+        .menu-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+        }
+
+        .menu-btn span {
+            display: block;
+            width: 22px;
+            height: 2.5px;
+            background-color: #d4af37;
+            border-radius: 2px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logo ma g store.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .free-delivery-badge {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.92); /* خلفية بيضاء مع بداية شفافية خفيفة */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            flex-grow: 1;
+        }
+
+        .free-shipping-tag {
+            font-size: 0.85rem;
+            color: #25d366;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .btn-order {
+            background-color: #25d366;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: #1eb954;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MA G STORE</div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#collection">Catalogue</a>
+            </div>
+            <button class="menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Catalogue Officiel MA G STORE</h1>
+        <p>Découvrez notre collection exclusive de montres de luxe</p>
+        <div class="free-delivery-badge">🚚 Livraison Gratuite Partout au Maroc</div>
+    </section>
+
+    <div class="container" id="collection">
+        <h2 class="section-title">Notre Catalogue</h2>
+        <div class="grid">
+
+            <!-- 1. Patek Philippe -->
+            <div class="card">
+                <img src="batekh philipe 1.jpeg" alt="Patek Philippe">
+                <div class="card-body">
+                    <h3 class="card-title">Patek Philippe Nautilus</h3>
+                    <p class="card-desc">Design sportif et luxueux en acier brossé avec cadran texturé.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Patek%20Philippe%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Rolex Batman -->
+            <div class="card">
+                <img src="batman 1.jpeg" alt="Rolex Batman">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex GMT-Master II "Batman"</h3>
+                    <p class="card-desc">Cadran noir, lunette céramique noire et bleue avec bracelet Jubilé.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Batman%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Cartier Bleu -->
+            <div class="card">
+                <img src="cartie bleu.jpeg" alt="Cartier Bleu">
+                <div class="card-body">
+                    <h3 class="card-title">Cartier Santos Bleu</h3>
+                    <p class="card-desc">Boîtier carré élégant, cadran bleu et bracelet raffiné.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Bleu%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Cartier Noire -->
+            <div class="card">
+                <img src="cartier noire.jpeg" alt="Cartier Noire">
+                <div class="card-body">
+                    <h3 class="card-title">Cartier Santos Noir</h3>
+                    <p class="card-desc">Boîtier carré élégant, cadran noir avec chiffres romains.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Cartier%20Noire%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Guess -->
+            <div class="card">
+                <img src="guesse s.jpeg" alt="Guess Watch">
+                <div class="card-body">
+                    <h3 class="card-title">Montre Guess Casual</h3>
+                    <p class="card-desc">Élégante et moderne avec coffret d'origine et certificat.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Montre%20Guess%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Matchy Rolex -->
+            <div class="card">
+                <img src="matchy rolex.jpeg" alt="Matchy Rolex">
+                <div class="card-body">
+                    <h3 class="card-title">Duo Set Rolex</h3>
+                    <p class="card-desc">Ensemble de deux montres assorties pour couples.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20Duo%20Rolex%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Matchy Gold Rolex -->
+            <div class="card">
+                <img src="matchy goold rolex .jpeg" alt="Matchy Gold Rolex">
+                <div class="card-body">
+                    <h3 class="card-title">Duo Set Rolex Gold</h3>
+                    <p class="card-desc">Ensemble exclusif de deux montres dorées.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20Duo%20Gold%20Rolex%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Rolex Gold -->
+            <div class="card">
+                <img src="roles gold 1.jpeg" alt="Rolex Gold">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Day-Date Gold</h3>
+                    <p class="card-desc">Finition dorée prestigieuse avec un magnifique cadran.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Gold%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Rolex Cuire Coffe -->
+            <div class="card">
+                <img src="rolex cuire coffe.jpeg" alt="Rolex Cuir Marron">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Arabic Dial (Marron)</h3>
+                    <p class="card-desc">Cadran marron avec chiffres arabes et bracelet en cuir.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Cuir%20Marron%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Rolex Cuire Noire -->
+            <div class="card">
+                <img src="rolex cuire noire.jpeg" alt="Rolex Cuir Noir">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Classic (Cuir Noir)</h3>
+                    <p class="card-desc">Design classique et épuré avec bracelet en cuir noir.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Cuir%20Noir%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Rolex Pepsi -->
+            <div class="card">
+                <img src="rolex pepsi.jpeg" alt="Rolex Pepsi">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex GMT-Master II "Pepsi"</h3>
+                    <p class="card-desc">Design iconique avec lunette bleue et rouge et finition haute qualité.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Pepsi%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Rolex Rose -->
+            <div class="card">
+                <img src="rolex rose.jpeg" alt="Rolex Rose">
+                <div class="card-body">
+                    <h3 class="card-title">Rolex Datejust Rose</h3>
+                    <p class="card-desc">Cadran rose élégant avec finitions raffinées.</p>
+                    <div class="free-shipping-tag">✓ Livraison Gratuite</div>
+                    <div class="card-footer">
+                        <span class="price">219 DH</span>
+                        <a href="https://wa.me/212648807602?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20Rolex%20Rose%20(219%20DH)" class="btn-order" target="_blank">Commander</a>
                     </div>
                 </div>
             </div>
@@ -415,16 +832,6 @@
 
 </body>
 </html>
-</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer id="contact">
-        <p>&copy; 2026 MA G STORE. Tous droits réservés.</p>
-    </footer>
 
 </body>
 </html>
